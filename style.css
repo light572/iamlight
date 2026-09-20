@@ -193,3 +193,57 @@ footer {
         padding: 60px 5%;
     }
 }
+/* =========================
+   MOBILE MENU
+   ========================= */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    font-size: 24px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 18px 6%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #080808;
+        border-top: 1px solid #292929;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 14px;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+}
