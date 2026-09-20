@@ -247,3 +247,49 @@ footer {
         display: block;
     }
 }
+/* =========================
+   I AM LIGHT — HERO GLOW
+   ========================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft light behind the title */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(
+        circle,
+        rgba(212, 175, 55, 0.18),
+        transparent 70%
+    );
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* Keep hero content above the glow */
+.hero h1,
+.hero p,
+.hero div {
+    position: relative;
+    z-index: 1;
+}
+
+/* Signature */
+.hero::after {
+    content: "Let there be light.  •  Know thyself.";
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin-top: 35px;
+    color: #d4af37;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
