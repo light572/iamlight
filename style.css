@@ -293,3 +293,38 @@ footer {
     letter-spacing: 2px;
     opacity: 0.8;
 }
+/* =========================
+   BOOK COVERS
+   ========================= */
+
+.book-cover {
+    width: 150px;
+    height: 210px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(212, 175, 55, 0.35),
+            #111111 65%
+        );
+
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+
+    color: #d4af37;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    box-shadow:
+        0 10px 35px rgba(212, 175, 55, 0.12);
+}
+
+.book-cover span {
+    line-height: 1.6;
+}
