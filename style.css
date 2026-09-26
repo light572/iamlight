@@ -347,3 +347,19 @@ footer {
 .session-card .button {
     margin-top: 15px;
 }
+/* =========================
+   SUPPORT PAGE
+   ========================= */
+
+.support-card {
+    max-width: 550px;
+    margin: 40px auto;
+}
+
+.mpesa-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d4af37;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
