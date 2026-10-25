@@ -26,6 +26,18 @@
     });
   }
 
+  // Close menu with Escape or by tapping outside it
+  function closeMenu() {
+    if (!btn || !links) return;
+    links.classList.remove("open");
+    btn.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+  }
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeMenu(); });
+  document.addEventListener("click", function (e) {
+    if (links && links.classList.contains("open") && !links.contains(e.target) && !btn.contains(e.target)) closeMenu();
+  });
+
   // Navbar shadow + back-to-top
   var nav = document.getElementById("navbar");
   var top = document.getElementById("toTop");

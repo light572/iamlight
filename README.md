@@ -3,8 +3,9 @@
 Static site (HTML/CSS/JS) - works directly on GitHub Pages.
 
 ## Deploy
-Upload ALL files in this folder to your `iamlight` GitHub repo (replace old files), then commit.
-Delete the old `base.html` / Flask templates if present - they are no longer needed.
+1. In your `iamlight` GitHub repo, delete the old files (old `index.html`, `about.html`, `books.html`, `sessions.html`, `support.html`, `style.css`, `script.js`, `base.html`, and any `templates/` or `static/` folders).
+2. Upload ALL files from this folder to the repo root and commit.
+3. Wait 1-2 minutes, then refresh the site (hard refresh or clear cache on your phone).
 
 ## Pages
 index, about, sessions, books, support, 404
