@@ -1,197 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Support | I AM LIGHT</title>
-
-    <meta name="description"
-          content="Support the I AM LIGHT mission through M-Pesa and help the work continue to grow.">
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support the Work | I AM LIGHT</title>
+<meta name="description" content="Support the I AM LIGHT mission via M-Pesa.">
+<meta name="theme-color" content="#0b0b0b">
+<meta property="og:title" content="Support the Work | I AM LIGHT">
+<meta property="og:description" content="Support the I AM LIGHT mission via M-Pesa.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230b0b0b'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23d4af37'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<!-- NAVIGATION -->
-
-<nav>
-    <h2>I AM LIGHT</h2>
-
-    <button class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </button>
-
-    <ul id="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="sessions.html">Sessions</a></li>
-        <li><a href="support.html">Support</a></li>
-    </ul>
-</nav>
-
-
-<!-- SUPPORT HERO -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="navbar" id="navbar">
+  <a class="logo" href="index.html">I AM LIGHT</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  <nav class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="about.html">About</a><a href="sessions.html">Sessions</a><a href="books.html">Books</a><a href="support.html" class="active">Support</a><a class="nav-cta" href="sessions.html#book">Book a Session</a></nav>
+</header>
+<main id="main">
 
 <section class="hero">
-
-    <h1>SUPPORT</h1>
-
-    <p>
-        Help the light continue to shine.
-    </p>
-
+  <p class="eyebrow reveal">Support</p>
+  <h1 class="reveal">Support the Work</h1>
+  <p class="lead reveal">If my content has inspired or helped you, you can support the mission.</p>
+</section>
+<section class="wrap narrow">
+  <div class="card reveal">
+    <h3>M-Pesa</h3>
+    <div class="mpesa" id="mpesaNum">0745130626</div>
+    <button class="secondary" id="copyBtn" type="button">Copy Number</button>
+    <p class="muted small" id="copyMsg" aria-live="polite"></p>
+  </div>
+  <div class="center reveal"><a class="primary" href="https://wa.me/254745130626?text=Hello%20I%20would%20like%20to%20support%20your%20work." target="_blank" rel="noopener">Contact on WhatsApp</a></div>
+  <p class="center muted reveal">Thank you &mdash; every bit keeps this work going.</p>
 </section>
 
-
-<!-- SUPPORT MESSAGE -->
-
-<section>
-
-    <h2>Support I AM LIGHT</h2>
-
-    <p>
-        I AM LIGHT is built around creating content, sharing ideas,
-        writing books and having conversations that encourage deeper
-        understanding.
-    </p>
-
-    <p>
-        If the work has added value to your journey and you would like
-        to support the mission, you can send a contribution through
-        M-Pesa.
-    </p>
-
-</section>
-
-
-<!-- M-PESA -->
-
-<section>
-
-    <div class="card support-card">
-
-        <h2>☕ Buy Light a Coffee</h2>
-
-        <p>
-            Your support helps with content creation, equipment,
-            research, books and the continued growth of the platform.
-        </p>
-
-        <h3>M-Pesa</h3>
-
-        <div class="mpesa-number">
-            0745 130 626
-        </div>
-
-        <p>
-            Send your contribution to the number above.
-        </p>
-
-        <a
-            href="https://wa.me/254745130626?text=Hello%20Light.%20I%20would%20like%20to%20support%20I%20AM%20LIGHT."
-            target="_blank"
-            class="button">
-
-            Contact Light
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- WHY SUPPORT -->
-
-<section>
-
-    <h2>What Your Support Helps Create</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>🎥 Content</h3>
-
-            <p>
-                Videos and conversations exploring consciousness,
-                wisdom, spirituality and human behaviour.
-            </p>
-        </div>
-
-
-        <div class="card">
-            <h3>📖 Books</h3>
-
-            <p>
-                Digital books and written resources for deeper
-                reflection and learning.
-            </p>
-        </div>
-
-
-        <div class="card">
-            <h3>🎙️ Equipment</h3>
-
-            <p>
-                Better tools for recording, creating and sharing
-                the message with a wider audience.
-            </p>
-        </div>
-
-
-        <div class="card">
-            <h3>🌍 The Mission</h3>
-
-            <p>
-                Helping the I AM LIGHT message reach more people
-                around the world.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- GRATITUDE -->
-
-<section>
-
-    <h2>Thank You</h2>
-
-    <p>
-        Whether you watch a video, read a book, book a session,
-        share the work or contribute financially — you are part
-        of the journey.
-    </p>
-
-    <p>
-        <strong>Let there be light.</strong>
-    </p>
-
-</section>
-
-
-<!-- FOOTER -->
-
+</main>
 <footer>
-
-    <p>
-        © 2026 I AM LIGHT. All rights reserved.
-    </p>
-
-    <p>
-        Let there be light. • Know thyself.
-    </p>
-
+  <div class="footer-grid">
+    <div><div class="logo">I AM LIGHT</div><p>Explore. Understand. Become.</p></div>
+    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="sessions.html">Sessions</a><a href="books.html">Books</a><a href="support.html" class="active">Support</a></div>
+    <div class="footer-links">
+      <a href="https://youtube.com/@iamlightofficial" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://wa.me/254745130626" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <p class="copy">&copy; <span id="year">2026</span> I AM LIGHT. All rights reserved.</p>
 </footer>
-
-
+<button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
 <script src="script.js"></script>
-
 </body>
 </html>

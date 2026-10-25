@@ -1,191 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sessions | I AM LIGHT</title>
-
-    <meta name="description"
-          content="Book a one-on-one I AM LIGHT session for deeper conversations and personal exploration.">
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Session | I AM LIGHT</title>
+<meta name="description" content="Book a 30-minute one-on-one session for KSh 1,000 via WhatsApp.">
+<meta name="theme-color" content="#0b0b0b">
+<meta property="og:title" content="Book a Session | I AM LIGHT">
+<meta property="og:description" content="Book a 30-minute one-on-one session for KSh 1,000 via WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230b0b0b'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23d4af37'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<!-- NAVIGATION -->
-
-<nav>
-    <h2>I AM LIGHT</h2>
-
-    <button class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </button>
-
-    <ul id="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="sessions.html">Sessions</a></li>
-        <li><a href="support.html">Support</a></li>
-    </ul>
-</nav>
-
-
-<!-- SESSION HERO -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="navbar" id="navbar">
+  <a class="logo" href="index.html">I AM LIGHT</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  <nav class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="about.html">About</a><a href="sessions.html" class="active">Sessions</a><a href="books.html">Books</a><a href="support.html">Support</a><a class="nav-cta" href="sessions.html#book">Book a Session</a></nav>
+</header>
+<main id="main">
 
 <section class="hero">
-
-    <h1>SESSIONS</h1>
-
-    <p>
-        One conversation can open a new perspective.
-    </p>
-
+  <p class="eyebrow reveal">One-on-One</p>
+  <h1 class="reveal">Book a Session</h1>
+  <div class="price reveal">KSh 1,000 <span>/ 30 minutes</span></div>
+  <p class="lead reveal">A personal one-on-one session, booked through WhatsApp. Fill in the form below and your request is sent straight to me.</p>
 </section>
 
-
-<!-- SESSION OFFER -->
-
-<section>
-
-    <h2>One-on-One Session</h2>
-
-    <p>
-        A private conversation for exploring ideas, asking questions,
-        gaining perspective and going deeper into the things that matter
-        to you.
-    </p>
-
-
-    <div class="card session-card">
-
-        <h3>I AM LIGHT Session</h3>
-
-        <div class="price">
-            KSh 1,000
-        </div>
-
-        <p>
-            <strong>1 hour</strong>
-        </p>
-
-        <p>
-            Sessions are held through WhatsApp.
-            Choose a suitable time and we'll arrange the conversation.
-        </p>
-
-        <a
-            href="https://wa.me/254745130626?text=Hello%20Light.%20I%20would%20like%20to%20book%20a%20one-on-one%20session."
-            target="_blank"
-            class="button">
-
-            Book via WhatsApp
-
-        </a>
-
-    </div>
-
+<section class="wrap narrow" id="book">
+  <div class="card form-card reveal">
+    <h3>Request your session</h3>
+    <form id="bookForm" novalidate>
+      <label>Your name<input type="text" id="bName" placeholder="Full name" required></label>
+      <label>What would you like to talk about?
+        <select id="bTopic">
+          <option>Spirituality &amp; consciousness</option>
+          <option>Personal transformation</option>
+          <option>Purpose &amp; direction</option>
+          <option>Creativity</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <div class="row">
+        <label>Preferred date<input type="date" id="bDate"></label>
+        <label>Preferred time<input type="time" id="bTime"></label>
+      </div>
+      <label>Anything else? (optional)<textarea id="bNote" rows="3" placeholder="Share a little context..."></textarea></label>
+      <p class="form-error" id="bError" role="alert"></p>
+      <button type="submit" class="primary block">Send Request on WhatsApp</button>
+      <p class="muted small">Session: 30 minutes &middot; KSh 1,000. Pay via M-Pesa, confirmed with you on WhatsApp.</p>
+    </form>
+  </div>
 </section>
 
-
-<!-- WHAT WE CAN EXPLORE -->
-
-<section>
-
-    <h2>What Can We Explore?</h2>
-
-    <div class="cards">
-
-        <div class="card">
-
-            <h3>Consciousness</h3>
-
-            <p>
-                Awareness, identity, perception and understanding
-                the inner world.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>Purpose</h3>
-
-            <p>
-                Questions about direction, meaning, potential
-                and personal growth.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>Relationships</h3>
-
-            <p>
-                Human behaviour, communication, patterns and
-                interpersonal dynamics.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>Spirituality</h3>
-
-            <p>
-                Faith, scripture, spiritual questions and
-                personal transformation.
-            </p>
-
-        </div>
-
-    </div>
-
+<section class="wrap narrow">
+  <h2 class="section-title reveal">How It Works</h2>
+  <div class="grid three steps">
+    <div class="card reveal"><div class="num">1</div><h3>Request</h3><p>Send your preferred time via the form.</p></div>
+    <div class="card reveal"><div class="num">2</div><h3>Confirm</h3><p>I reply on WhatsApp to confirm the slot and payment.</p></div>
+    <div class="card reveal"><div class="num">3</div><h3>Connect</h3><p>We meet for your focused 30 minutes.</p></div>
+  </div>
 </section>
 
-
-<!-- NOTE -->
-
-<section>
-
-    <h2>A Space for Honest Conversation</h2>
-
-    <p>
-        Come with your questions, ideas or experiences.
-        The purpose is to create space for reflection,
-        exploration and deeper understanding.
-    </p>
-
-    <p>
-        <strong>Let there be light.</strong>
-    </p>
-
+<section class="wrap narrow">
+  <h2 class="section-title reveal">Questions</h2>
+  <details class="faq reveal"><summary>How long is a session?</summary><p>30 minutes, one-on-one.</p></details>
+  <details class="faq reveal"><summary>How much does it cost?</summary><p>KSh 1,000 per session.</p></details>
+  <details class="faq reveal"><summary>How do I book?</summary><p>Use the form above. It opens WhatsApp with your details filled in &mdash; just press send.</p></details>
+  <details class="faq reveal"><summary>How do I pay?</summary><p>Via M-Pesa. Payment details are shared with you on WhatsApp when we confirm your time.</p></details>
 </section>
 
-
-<!-- FOOTER -->
-
+</main>
 <footer>
-
-    <p>
-        © 2026 I AM LIGHT. All rights reserved.
-    </p>
-
-    <p>
-        Let there be light. • Know thyself.
-    </p>
-
+  <div class="footer-grid">
+    <div><div class="logo">I AM LIGHT</div><p>Explore. Understand. Become.</p></div>
+    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="sessions.html" class="active">Sessions</a><a href="books.html">Books</a><a href="support.html">Support</a></div>
+    <div class="footer-links">
+      <a href="https://youtube.com/@iamlightofficial" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://wa.me/254745130626" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <p class="copy">&copy; <span id="year">2026</span> I AM LIGHT. All rights reserved.</p>
 </footer>
-
-
+<button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
 <script src="script.js"></script>
-
 </body>
 </html>
